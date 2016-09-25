@@ -7,7 +7,7 @@ use CodePress\CodeTag\Tests\AbstractTestCase;
 use Illuminate\Validation\Validator;
 use Mockery as m;
 
-class CodeTag extends AbstractTestCase
+class TagTest extends AbstractTestCase
 {
     public function setUp()
     {

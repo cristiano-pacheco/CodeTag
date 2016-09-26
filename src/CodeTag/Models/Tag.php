@@ -18,11 +18,6 @@ class Tag extends Model
      */
     protected $validator;
 
-    public function categorizable()
-    {
-        return $this->morphTo();
-    }
-
     public function isValid()
     {
         $validator = $this->validator;
@@ -49,5 +44,10 @@ class Tag extends Model
     public function getValidator()
     {
         return $this->validator;
+    }
+
+    public function posts()
+    {
+        return $this->morphedByMany('\CodePress\CodePost\Models\Post', 'taggable', 'codepress_taggables');
     }
 }

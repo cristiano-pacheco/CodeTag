@@ -2,6 +2,7 @@
 
 namespace CodePress\CodeTag\Tests\Models;
 
+use CodePress\CodePost\Models\Post;
 use CodePress\CodeTag\Models\Tag;
 use CodePress\CodeTag\Tests\AbstractTestCase;
 use Illuminate\Validation\Validator;
@@ -83,4 +84,6 @@ class TagTest extends AbstractTestCase
 
         $this->assertEquals('Tag Test', $tag->name);
     }
+
+
 }
